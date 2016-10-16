@@ -1,0 +1,18 @@
+9月1日凌晨 登陆完毕之后 viewpager 未刷新
+9月1日上午 登陆后视图可刷新 但自动登陆视图不刷新
+9月3日夜  关于定位的一些对象
+        poiInfo通过地图点击获取 poiInfo.location 获取一个Latlng类型的对象 保存在Bean中
+        这个对象用来跟Application中获取的当前地理位置进行距离计算
+        BmobGeoPoint是Bmob中的对象 标识地理位置信息 用来查询使用
+        因为这个项目中模拟商户信息 所以我暂时并不打算保存这个对象
+
+        二级缓存 商户的图片放在ObjectId/ObjectId.jpeg 菜单图片放在ObjectId/...,jpeg
+
+9月4日凌晨 实现了商户的信息的展示
+9月5日上午 菜品图片保存在"/" + shop.getObjectId() + "/" + food.getObjectId() + ".jpeg“
+            跳转客服QQ http://wpa.qq.com/msgrd?v=3&uin=406910111&site=qq&menu=yes
+
+9月8日下午  Bmob查询报强转错误 范型／反射 尝试子类继承
+9月8日夜  自动登陆刷新视图空指针问题找到解决方法 要异步加载／更新视图
+
+评价 收藏 三方 红包 代金券

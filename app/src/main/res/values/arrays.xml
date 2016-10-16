@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pay">
+        <item>钱包余额</item>
+        <item>支付宝</item>
+        <item>微信支付</item>
+    </string-array>
+</resources>

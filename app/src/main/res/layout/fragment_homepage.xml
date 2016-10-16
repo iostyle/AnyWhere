@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#FFFFFF">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_homepage_titleviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="2dp"
+            android:background="#fff" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="160dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/title_foot" />
+
+            <GridView
+                android:id="@+id/fragment_homepage_typeGrid"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="#fff"
+                android:listSelector="#00000000"
+                android:numColumns="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:listSelector="#00000000"
+                    android:id="@+id/fragment_homepage_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFF">
+
+                </ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
